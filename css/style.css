@@ -1,0 +1,27 @@
+/* Переменные */
+:root {
+  --font-Oranienbaum: 'Oranienbaum', serif;
+  --main-indent: 3%;
+}
+
+/* Фоновое изображение шапки */
+header {
+  background-image: url("../img/bg-main.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: var(--font-Oranienbaum);
+  background-repeat: no-repeat;
+  padding: 0 var(--main-indent);
+}
+.main-container {
+  max-width: 1300px;
+}
+#top_navigation nav {
+  font-size: 18px;
+}
+#top_navigation .social_network {
+  font-size: 1.5em;
+}
+#top_navigation .tel_number p {
+  margin: 0;
+}
