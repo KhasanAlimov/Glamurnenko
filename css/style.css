@@ -1,7 +1,15 @@
 /* Переменные */
 :root {
   --font-Oranienbaum: 'Oranienbaum', serif;
+  --font-Scada: 'Scada', arial;
   --main-indent: 3%;
+}
+
+p {
+  margin: 0;
+}
+.heading {
+  font-family: var(--font-Oranienbaum);
 }
 
 /* Фоновое изображение шапки */
@@ -16,12 +24,138 @@ header {
 .main-container {
   max-width: 1300px;
 }
+
+/* Меню */
 #top_navigation nav {
   font-size: 18px;
 }
+
+/* Соц-сети */
 #top_navigation .social_network {
   font-size: 1.5em;
 }
-#top_navigation .tel_number p {
-  margin: 0;
+
+/* Миссия */
+header .logo-mission {
+  margin: 8em 0 0 0;
+}
+header .logo-mission p:first-child {
+  font-size: 20px;
+}
+header .logo-mission p:last-child {
+  text-decoration: underline;
+  color: #af926f;
+}
+
+/* Новинка */
+#novelty-style .description {
+  max-width: 900px;
+}
+#novelty-style .novelty-img {
+  width: 160px;
+  top: 0;
+  left: 0;
+  filter: drop-shadow(3px 5px 5px #adadad);
+}
+#novelty-style .description p {
+  font-family: var(--font-Scada);
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* Как происходит */
+#how-going-description div {
+  max-width: 700px;
+  padding: 0 var(--main-indent)
+}
+#how-going-description div {
+  max-width: 700px;
+}
+#how-going-description div p {
+  margin: 1.5em 0;
+  color: #757575;
+}
+#how-going-description div p:last-child {
+  margin: 1.5em 0 0 10%;
+}
+
+/* Таблица */
+.table-container {
+  max-width: 900px;
+  font-weight: 700;
+  font-family: var(--font-Scada);
+}
+.table-container table {
+  border-color: #fdc300;
+}
+.table-container table th {
+  font-size: 14px;
+  background-color: #ffd100;
+  border-color: #fdc300;
+  border-width: 2px;
+}
+.table-container table td {
+  font-size: 14px;
+  background-color: #fff000;
+  border-color: #fdc300;
+  border-width: 2px;
+}
+.stright-column {
+  width: 16.666%;
+}
+/* Валюты */
+.currencies {
+  cursor: pointer;
+}
+.currencies:hover {
+  background-color: #ffd100;
+}
+
+/* пакеты услуг */
+#service-packages {
+  padding: 60px var(--main-indent);
+}
+#service-packages > div {
+  max-width: 1300px;
+}
+#service-packages > div .col {
+  padding: 15px 3%;
+}
+#service-packages > div .col .card {
+  border-width: 3px;
+  padding: 10px 4% 20px 4%;
+  transition: 0.3s;
+}
+#service-packages > div .col .card:hover {
+  box-shadow: 0 0 30px 0px #c5c5c5;
+}
+.card-head p {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+#service-packages .card-footer {
+  border: none;
+}
+
+/* Цена за пакет */
+#service-packages .card-footer .price {
+  font-size: 1.5em;
+}
+.prev-price {
+  font-size: 0.8em;
+}
+.prev-price::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  transform: rotate(-10deg) translate(-5px, 20px);
+  border-top: solid 2px red;
+}
+
+
+
+/* Подвал */
+footer {
+  background-color: #000;
 }

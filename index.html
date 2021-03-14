@@ -23,12 +23,12 @@
 
     <!-- Шапка -->
     <header class="vh-100 bg-dark text-light pt-5">
-      <div class="main-container m-auto">
+      <div class="main-container m-auto text-uppercase">
         <div id="top_navigation" class="row mx-0 justify-content-between align-items-center">
 
           <!-- Меню -->
           <nav class="navbar p-0 col-lg-8">
-            <ul class="d-flex list-unstyled text-uppercase m-0">
+            <ul class="d-flex list-unstyled m-0">
               <li class="nav-item">
                 <a href="#" class="nav-link text-light">Блог</a>
               </li>
@@ -78,9 +78,14 @@
         </div>
 
         <!-- Миссия компании -->
-        <div>
-          <div class="logo"></div>
-          <div class="mission"></div>
+        <div class="logo-mission">
+          <div class="logo">
+            <img src="img/logo-new.png" alt="Logo Glamurnenko">
+          </div>
+          <div class="mission mt-5">
+            <p>Наша миссия:</p>
+            <p>«Миллион красиво одетых женщин»</p>
+          </div>
         </div>
       </div>
     </header>
@@ -89,16 +94,196 @@
     <main>
 
       <!-- Новинка -->
-      <section></section>
+      <section id="novelty-style" class="position-relative pt-5">
+        <img class="position-absolute novelty-img" src="img/new-style.png" alt="Новинка">
+        <div class="description text-center text-uppercase mx-auto p-3">
+          <h1 class="heading mb-5">Скорая стильная помощь</h1>
 
+          <p>Онлине-консультация стилиста в вашем мобильном телефоне когда вам нужно: на шоппинге, во время разбора гардероба, когда подбираете комплект, просто когда нужен совет</p>
+        </div>
+        <img class="w-100" src="img/form-reservation-bigcolor.jpg" alt="Выбор одежды">
+        <figcaption class="text-center text-secondary">Описание картинки</figcaption>
+      </section>
+      
       <!-- Как всё происходит описание -->
-      <section></section>
+      <section id="how-going-description">
+        <div class="mx-auto my-5">
+          <h2 class="heading text-uppercase">Как всё происходит</h2>
 
-      <!-- Таблица записаться -->
-      <section></section>
+          <p>После оплаты мы подключаем вас в канал в Telegram с нашим стилистом.</p>
+
+          <p>Подключение происходит в рабочее время: ПН-ПТ с 10 до 19 МСК</p>
+
+          <p>Сразу же вы можете писать свои вопрасами.</p>
+
+          <p>Ответы будут в пределах часа в рабочее время: ПН-ПТ с 10 до 19 МСК</p>
+
+          <p>Если вы не получаете ответ за 1 час, мы продлеваем время дествия услиги на 24 часа.</p>
+
+          <p>А если нужна помощь в выходной день?</p>
+
+          <p>Напишите об этом как можно раньше, но не менее, чем за 24 часа. Получите подтверждение стилиста. Если вы
+            отправляетесь, к примеру, на шопинг в выходой день и вам нужно, чтобы стилист был с вами на связи, токой вариант
+            возможен по предварительной договоренности со стилистом.</p>
+        </div>
+      </section>
+
+      <!-- Записывайтесь прямо сейчас -->
+      <section>
+        <h2 class="heading text-uppercase text-center">Записывайтесь прямо сейчас</h2>
+
+        <!-- Таблица -->
+        <div class="table-container m-auto">
+          <table class="w-100 table table-bordered text-center">
+            <tr class="text-uppercase">
+              <th class="w-50 text-left">Вы получаете:</th>
+              <th class="stright-column">Теория</th>
+              <th class="stright-column">Практика</th>
+              <th class="stright-column">vip</th>  
+            </tr>
+            <tr>
+              <td class="w-50 text-left">Все материалы тренинга</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td class="w-50 text-left">Проверка ДЗ</td>
+              <td>—</td>
+              <td>2,5 месяца <br> * имиджмейкером команды Гламурненько.ру</td>
+              <td>2,5 месяца <br> * лично Екатериной Маляровой</td>
+            </tr>
+            <tr>
+              <td class="w-50 text-left">Тренажёр по стилевым типежам</td>
+              <td>—</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td class="w-50 text-left">Тренажёр по ващам и образам</td>
+              <td>—</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr class="text-uppercase">
+              <th class="w-50 text-left">Цена</th>
+              <th>7 990 ₽</th>
+              <th>9 990 ₽</th>
+              <th>24 990 ₽</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="3">
+                <span class="currencies border border-dark py-1 px-2">₽</span>
+                <span class="currencies border border-dark py-1 px-2">₴</span>
+                <span class="currencies border border-dark py-1 px-2">$</span>
+                <span class="currencies border border-dark py-1 px-2">€</span>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button class="btn btn-dark rounded-0 text-uppercase">Заказать</button></td>
+              <td><button class="btn btn-dark rounded-0 text-uppercase">Заказать</button></td>
+              <td><button class="btn btn-dark rounded-0 text-uppercase">Заказать</button></td>
+            </tr>
+          </table>
+        </div>
+        <img class="w-100" src="img/2razmera_books_preview_1200_c.jpg" alt="Книги">
+      </section>
 
       <!-- Пакет услуг -->
-      <section></section>
+      <section id="service-packages">
+        <h2 class="heading text-uppercase text-center">Пакеты услуг</h2>
+
+        <!-- Карты -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-auto">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="card-head text-center">
+                  <p>Пакет</p>
+                  <h3>«Попробовать»</h3>
+                </div>
+                <div class="pt-3">
+                  <p>
+                    <span class="text-secondary">Срок:</span><br>
+                    <span><b>в пределах 24 часов</b></span>
+                  </p>
+                  <p class="mt-2">
+                    <span class="text-secondary">Вопросов/комплектовна оценку:</span><br>
+                    <span><b>5 ваших луков или 5 вопросов</b></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <p class="price">
+                  <span class="prev-price text-secondary position-relative">890₽</span><br>
+                  <span><b>499₽</b></span>
+                </p>
+                <button class="btn btn-danger text-uppercase w-100 mt-3">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="card-head text-center">
+                  <p>Пакет</p>
+                  <h3>«1 день»</h3>
+                </div>
+                <div class="pt-3">
+                  <p>
+                    <span class="text-secondary">Срок:</span><br>
+                    <span><b>в пределах 24 часов</b></span>
+                  </p>
+                  <p class="mt-2">
+                    <span class="text-secondary">Вопросов/комплектовна оценку:</span><br>
+                    <span><b>до 100</b></span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer text-center">
+                <p class="price">
+                  <span class="prev-price text-secondary position-relative">3900₽</span><br>
+                  <span><b>2900₽</b></span>
+                </p>
+                <button class="btn btn-danger text-uppercase w-100 mt-3">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="card-head text-center">
+                  <p>Пакет</p>
+                  <h3>«1 месяц»</h3>
+                </div>
+                <div class="pt-3">
+                  <p>
+                    <span class="text-secondary">Срок:</span><br>
+                    <span><b>в течении месяца</b></span>
+                  </p>
+                  <p class="mt-2">
+                    <span class="text-secondary">Вопросов/комплектовна оценку:</span><br>
+                    <span><b>неограниченно</b></span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer text-center">
+                <p class="price">
+                  <span class="prev-price text-secondary position-relative">11900₽</span><br>
+                  <span><b>9900₽</b></span>
+                </p>
+                <button class="btn btn-danger text-uppercase w-100 mt-3">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Изображения происходящего -->
       <section>
@@ -127,8 +312,20 @@
     </main>
 
     <!-- Подвал -->
-    <footer>
-
+    <footer class="text-white py-5 px-4">
+      <div class="text-center">
+        <button type="button" class="btn btn-outline-light rounded-0 text-uppercase">Наверх <i
+            class="fas fa-angle-up"></i></button>
+      </div>
+      <div class="mt-5">
+        <p class="my-2"><a href="#" class="text-light">Вакансии</a></p>
+        <p class="my-2"><a href="#" class="text-light">Карта сайта</a></p>
+        <p class="my-2"><a href="#" class="text-light">Политика приватности</a></p>
+        <p class="my-2">Перепечатка разрешена только с активной ссылкой на нас</p>
+        <p class="my-2">© Glamurnenko.ru,2005-2019 Тел.:<a href="#" class="text-light"> 8(800)707-05-13;</a> <a href="#"
+            class="text-light"> +7(499)350-23-35></a></p>
+        <p class="my-2">Email: <a href="#" class="text-light">support@glamurnenko.ru</a></p>
+      </div>
     </footer>
 
     <!-- JQuery -->
