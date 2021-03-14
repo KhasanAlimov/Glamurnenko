@@ -26,14 +26,38 @@ header {
 }
 
 /* Меню */
-#top_navigation nav {
+#top_navigation nav .nav-link{
   font-size: 18px;
+  padding: 0.5rem 0.6rem;
+}
+#top_navigation {
+  transition: 0.5s;
 }
 
 /* Соц-сети */
 #top_navigation .social_network {
   font-size: 1.5em;
 }
+.menu-burger, .close-menu {
+  display: none;
+  cursor: pointer;
+}
+.close-menu {
+  align-self: flex-end;
+}
+.menu-burger:hover, .close-menu:hover {
+  color: #d4d4d4;
+}
+.stick-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000e5;
+  width: 100%;
+  z-index: 90;
+  padding: 10px;
+}
+
 
 /* Миссия */
 header .logo-mission {
@@ -84,6 +108,7 @@ header .logo-mission p:last-child {
   max-width: 900px;
   font-weight: 700;
   font-family: var(--font-Scada);
+  overflow: auto;
 }
 .table-container table {
   border-color: #fdc300;
@@ -93,6 +118,7 @@ header .logo-mission p:last-child {
   background-color: #ffd100;
   border-color: #fdc300;
   border-width: 2px;
+  white-space: nowrap;
 }
 .table-container table td {
   font-size: 14px;
@@ -156,6 +182,9 @@ header .logo-mission p:last-child {
 #how-going-gallery > div {
   max-width: 900px;
 }
+#how-going-gallery .row {
+  margin: 0;
+}
 #how-going-gallery > div .description {
   font-size: 1.3em;
 }
@@ -163,4 +192,36 @@ header .logo-mission p:last-child {
 /* Подвал */
 footer {
   background-color: #000;
+}
+
+/* media адаптивность */
+@media (max-width: 992px) {
+  #top_navigation nav .menu-list {
+    position: fixed;
+    visibility: hidden;
+    flex-direction: column;
+    top: -350px;
+    left: -115px;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  .menu-burger, .close-menu {
+    width: max-content;
+    display: block;
+  }
+  .show-menu {
+    visibility: visible !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  #novelty-style {
+    padding-top: 5rem !important;
+  }
 }

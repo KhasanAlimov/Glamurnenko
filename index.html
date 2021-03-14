@@ -27,8 +27,14 @@
         <div id="top_navigation" class="row mx-0 justify-content-between align-items-center">
 
           <!-- Меню -->
-          <nav class="navbar p-0 col-lg-8">
-            <ul class="d-flex list-unstyled m-0">
+          <nav class="navbar p-0 col-lg-8 col-2">
+            <span class="menu-burger">
+              <i class="fas fa-bars fa-2x"></i>
+            </span>
+            <ul class="menu-list d-flex list-unstyled m-0">
+              <span class="close-menu m-3">
+                <i class="far fa-times-circle fa-2x"></i>
+              </span>
               <li class="nav-item">
                 <a href="#" class="nav-link text-light">Блог</a>
               </li>
@@ -54,7 +60,7 @@
           </nav>
 
           <!-- Соц-сети -->
-          <div class="social_network col-lg-2 text-right">
+          <div class="social_network col-lg-2 col text-right">
             <span>
               <a href="#" class="text-light"><i class="fab fa-instagram mr-1"></i></a>
             </span>
@@ -67,7 +73,7 @@
           </div>
 
           <!-- Номера телефонов -->
-          <div class="tel_number text-right col-lg-2">
+          <div class="tel_number text-right col-lg-2 col">
             <p>
               <a href="#" class="text-light">8(800)707-05-13</a>
             </p>
@@ -347,7 +353,7 @@
     <!-- Подвал -->
     <footer class="text-white py-5 px-4">
       <div class="text-center">
-        <button type="button" class="btn btn-outline-light rounded-0 text-uppercase">Наверх <i
+        <button type="button" class="on-top btn btn-outline-light rounded-0 text-uppercase">Наверх <i
             class="fas fa-angle-up"></i></button>
       </div>
       <div class="mt-5">
@@ -367,5 +373,7 @@
     <!-- Fancybox -->
     <link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
     <script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
