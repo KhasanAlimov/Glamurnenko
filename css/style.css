@@ -153,7 +153,12 @@ header .logo-mission p:last-child {
   border-top: solid 2px red;
 }
 
-
+#how-going-gallery > div {
+  max-width: 900px;
+}
+#how-going-gallery > div .description {
+  font-size: 1.3em;
+}
 
 /* Подвал */
 footer {
